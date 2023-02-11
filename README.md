@@ -1,8 +1,4 @@
-# CTP Project Starter
-
-A full stack web application starter template for building projects with React, Express.js, and Sequelize.js
-
-**Current version:** 2022.2 (Oct 2022)
+# LENDIOUS
 
 ## Stack
 
@@ -38,33 +34,31 @@ Each team member will need to do this on their local machine.
 The project-starter template expects the following for local development:
 
 - PostgreSQL User/Role
-  - name: `ctp_user`
-  - password: `ctp_pass`
+  - name: `lendy_user`
+  - password: `lendy_pass`
 - PostgreSQL Database
-  - name: `ctp_appdb_development`
+  - name: `lendyDB`
 
 #### For Windows/pgAdmin users
 
-If you are on Windows and installed **pgAdmin** follow our [pgAdmin guide](https://github.com/CUNYTechPrep/guides/blob/master/pgAdmin-create-user-db.md) to create a user in PostgreSQL named `ctp_user` with the password `ctp_pass` and a database named `ctp_appdb_development`.
+If you are on Windows and installed **pgAdmin** follow our [pgAdmin guide](https://github.com/CUNYTechPrep/guides/blob/master/pgAdmin-create-user-db.md) to create a user in PostgreSQL named `lendy_user` with the password `lendy_pass` and a database named `lendyDB`.
 
 #### For Mac/Linux users
 
-Create a user in PostgreSQL named `ctp_user` with the password `ctp_pass`:
+Create a user in PostgreSQL named `lendy_user` with the password `lendy_pass`:
 
 > This only needs to be done one time on your machine
 > You can create additional users if you want to.
 
 ```
-createuser -P -s -e ctp_user
+createuser -P -s -e lendy_user
 ```
 
 Create a separate db for this project:
 
 ```
-createdb -h localhost -U ctp_user ctp_appdb_development
+createdb -h localhost -U lendy_user lendyDB
 ```
-
-> You will create a DB for each project you start based on this repo. For other projects change `ctp_appdb_development` to the new apps database name.
 
 ### Running the app locally
 
